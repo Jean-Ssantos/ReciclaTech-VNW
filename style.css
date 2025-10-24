@@ -9,6 +9,7 @@
 
 body {
   background-color: #85a389;
+  cursor: url("img/eco.cursor.png"), auto;
 }
 
 header {
@@ -17,10 +18,20 @@ header {
   margin-left: 80px;
   margin-right: 80px;
   position: sticky;
+  top: 0;
+  z-index: 10;
   background-color: hidden;
   color: white;
   border-radius: 3px;
   border: 1px;
+  display: inline;
+  float: right top;
+}
+
+#img-header {
+  width: 30px;
+  float: left;
+  margin-left: 80px;
 }
 
 h2 {
@@ -67,7 +78,7 @@ h6 {
   margin-right: 80px;
   margin-bottom: 0px;
   padding-top: 20px;
-  padding-left: 80px;
+  padding-left: 40px;
   font-size: 30px;
   font-family: "DM Serif Display", serif;
   font-weight: bolder;
@@ -75,11 +86,13 @@ h6 {
 }
 
 .h7 {
-  margin-bottom: 1px;
+  margin-bottom: 15px;
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 30px;
   width: bolder;
+  border-left: 30px;
+  border-style: hidden;
   font-size: 18px;
   font-family: "Abril Fatface", serif;
   font-style: normal;
@@ -90,11 +103,6 @@ p {
   font-family: Helvetica, sans-serif;
   margin-left: 30px;
   margin-right: 30px;
-}
-
-#img-header {
-  width: 30px;
-  float: left;
 }
 
 img {
@@ -144,7 +152,7 @@ div {
   margin-right: 0%;
 }
 
-span {
+.span-prime {
   color: #20402d;
   font-size: 13px;
   font-family: "Abril Fatface", serif;
@@ -193,22 +201,6 @@ span {
 }
 
 .button-doar {
-  background: none;
-  border-color: #20402d;
-  color: #20402d;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 3px;
-  padding: 5px;
-  font-family: sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 30px;
-}
-
-.button-doar {
   background-color: #20402d;
   border-color: #20402d;
   border-width: 2px;
@@ -218,7 +210,7 @@ span {
   font-family: sans-serif;
   font-size: 10px;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 30px;
   margin-right: 10px;
   margin-bottom: 20px;
   text-decoration: none;
@@ -234,7 +226,7 @@ span {
   font-family: sans-serif;
   font-size: 10px;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 30px;
   margin-right: 10px;
   margin-bottom: 20px;
   text-decoration: none;
@@ -404,4 +396,177 @@ span {
 
 .green {
   color: #90EE90;
+}
+
+footer {
+  background-color: #001000;
+  color: white;
+  margin-bottom: 0px;
+}
+
+#div-footer {
+  background-color: #001000;
+  color: white;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.div-footer-in {
+  background: #001000;
+  vertical-align: text-top;
+  text-align: start;
+  float: top;
+  color: white;
+}
+
+#link-f {
+  color: white;
+  color: white;
+  background-color: #2563EB;
+  border-color: #2563EB;
+  border-style: solid;
+  border-radius: 100%;
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 6px;
+  padding-right: 3px;
+  text-decoration: none;
+  display: inline;
+}
+
+#link-a {
+  color: white;
+  color: white;
+  background-color: #DB2777;
+  border-color: #DB2777;
+  border-style: solid;
+  border-radius: 100%;
+  padding-top: 2px;
+  padding-right: 1px;
+  padding-left: 2px;
+  padding-bottom: 1px;
+  font-size: 11px;
+  text-decoration: none;
+  display: inline;
+}
+
+#link-t {
+  color: white;
+  background-color: #60A5FA;
+  border-color: #60A5FA;
+  border-style: solid;
+  border-radius: 100%;
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-decoration: none;
+  display: inline;
+}
+
+.null {
+  opacity: 0;
+}
+
+#end {
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  cursor: url("img/eco.cursor.pointer.png"), pointer;
+}
+
+a:hover {
+  cursor: url("img/eco.cursor.pointer.png"), pointer;
+}
+
+@media screen and (max-width: 786px) {
+  #img-topo {
+    display: none;
+  }
+  section {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #img-prime {
+    width: 50px;
+    height: 50px;
+    float: bottom;
+  }
+  #text-prime {
+    float: top;
+  }
+  #card-prime {
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  div {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  #text-aparente {
+    font-size: 18px;
+    display: inline;
+  }
+  #doação:hover #text-fantasma {
+    font-size: 18px;
+    display: inline;
+  }
+  #text-interativo {
+    width: 90%;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  .div-inter-in {
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 8px;
+  }
+  .h7 {
+    font-size: 15px;
+    margin-left: 41px;
+    margin-right: 41px;
+  }
+  .button-adquirir {
+    width: 82px;
+  }
+  .outdoor {
+    display: inline-block;
+  }
+  .img-outdoor {
+    width: 200px;
+  }
+  .outdoor-in {
+    width: 80%;
+  }
+  h6 {
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    padding-left: 0px;
+  }
+  footer {
+    align-items: center;
+  }
+  .div-footer-in {
+    width: 25%;
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */
